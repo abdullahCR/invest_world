@@ -1,2 +1,0 @@
-# invest_world
- 
