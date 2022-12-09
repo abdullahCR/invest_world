@@ -1,0 +1,141 @@
+@import '../../../Layout/Styles/Variables/style';
+
+.capital-management-page {
+  padding-bottom: 10px;
+
+  .custom-layer-capital-management {
+    background-color: rgba(39, 46, 52, 0.53);
+    position: absolute;
+    height: calc(100vh - 180px + 200px);
+    width: 100%;
+  }
+  .capital-management-hero {
+    width: 530px;
+    h1 {
+      padding-bottom: 5px;
+      margin-bottom: 25px;
+      span {
+        border-spacing: 10px;
+        padding-bottom: 10px;
+        border-bottom: 6px solid $primary-color;
+      }
+    }
+    p {
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: capitalize;
+    }
+  }
+
+  .capital-content {
+    .content-container {
+      width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+
+      div {
+        background-color: $dark-light-bg-color;
+        padding: 60px 60px;
+        margin: 80px 0;
+        h2 {
+          font-weight: 800;
+          font-size: 30px;
+          text-transform: uppercase;
+          span {
+            color: $primary-color;
+          }
+        }
+        h3 {
+          width: 475px;
+          font-weight: 600;
+          font-size: 20px;
+          text-transform: capitalize;
+          padding: 30px 0 20px;
+        }
+        p {
+          font-size: 16px;
+          text-transform: capitalize;
+          width: 70%;
+          padding: 25px 0 35px;
+        }
+        &:nth-child(1) {
+          margin-top: 65px;
+        }
+        &:nth-child(2) {
+          margin: 55px 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .capital-management-page {
+    .capital-content {
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 30px;
+      .content-container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .capital-management-page {
+    .capital-content {
+      .content-container {
+        div {
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .capital-management-page {
+    .capital-management-hero {
+      width: 100%;
+      h1 {
+        font-size: 20px !important;
+      }
+      p {
+        font-size: 12px !important;
+        width: 100% !important;
+      }
+    }
+
+    .capital-content {
+      .content-container {
+        div {
+          h2 {
+            font-size: 20px;
+          }
+          h3 {
+            font-size: 16px;
+            width: 100%;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .capital-management-page {
+    .capital-content {
+      .content-container {
+        div {
+          padding: 30px 25px;
+        }
+      }
+    }
+  }
+}

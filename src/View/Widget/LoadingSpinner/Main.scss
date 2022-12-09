@@ -1,0 +1,26 @@
+@import '../../../View/Layout/Styles/Variables/style';
+
+.loading-spinner-holder {
+  display: flex;
+  justify-content: center;
+
+  .spinner-border {
+    margin: 10rem 0;
+    height: 8rem;
+    width: 8rem;
+    border-color: $primary-color;
+    border-width: 10px;
+    border-right-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .loading-spinner-holder {
+    .spinner-border {
+      margin: 5rem 0;
+      height: 4rem;
+      width: 4rem;
+      border-width: 7px;
+    }
+  }
+}

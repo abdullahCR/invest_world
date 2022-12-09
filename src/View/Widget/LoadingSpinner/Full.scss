@@ -1,0 +1,13 @@
+@import '../../../View/Layout/Styles/Variables/style';
+
+.full-screen-loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  background-color: $dark-bg-color;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}

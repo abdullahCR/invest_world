@@ -1,0 +1,8 @@
+const actionTypes = {
+  LOGIN_POST: 'LOGIN_POST',
+  LOGIN_POST_SUCCESS: 'LOGIN_POST_SUCCESS',
+  LOGIN_POST_FAIL: 'LOGIN_POST_FAIL',
+  LOGIN_POST_RESET: 'LOGIN_POST_RESET',
+}
+
+export default actionTypes

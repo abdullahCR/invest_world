@@ -1,0 +1,489 @@
+@import '../../Layout/Styles/Variables/style';
+
+.homepage-section {
+  .banner-main {
+    .content {
+      width: 100%;
+      h1 {
+        font-weight: 800;
+        font-size: 36px;
+      }
+      h3 {
+        color: $primary-color;
+        padding-top: 15px;
+        font-weight: 600;
+        font-size: 24px;
+      }
+      p {
+        width: 504px;
+        font-weight: 500;
+        font-size: 16px;
+        padding-bottom: 13px;
+      }
+    }
+  }
+}
+
+.homepage-content {
+  color: $text-light-color;
+  .our-products {
+    background-color: $dark-bg-color;
+    min-height: 1268px;
+    .banner-main {
+      h2 {
+        font-weight: 800;
+        font-size: 36px;
+        margin-top: 80px;
+        span {
+          color: $primary-color;
+        }
+      }
+      .content {
+        width: 100%;
+        margin-top: 130px;
+        .wealth-management {
+          .wealth-management-image {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+          }
+          .wealth-management-content {
+            width: 475px;
+            text-align: end;
+            h3 {
+              margin-top: 50px;
+              color: $primary-color;
+              font-weight: bold;
+              font-size: 30px;
+              margin-bottom: 39px;
+            }
+            p {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 160%;
+              text-transform: capitalize;
+              margin-bottom: 45px;
+            }
+          }
+          .responsive-content {
+            display: none;
+          }
+        }
+        .trading-platform {
+          margin-top: 180px;
+
+          .trading-platform-image {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+          }
+
+          .trading-platform-content {
+            width: 475px;
+            text-align: start;
+            h3 {
+              margin-top: 30px;
+              color: $primary-color;
+              font-weight: bold;
+              font-size: 30px;
+              margin-bottom: 39px;
+            }
+            p {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 160%;
+              text-transform: capitalize;
+              margin-bottom: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about-invest {
+    background-color: $dark-light-bg-color;
+    min-height: 1698px;
+    width: 100%;
+    position: relative;
+    .banner-main {
+      position: relative;
+      h2 {
+        font-weight: 800;
+        font-size: 36px;
+        margin-top: 80px;
+        span {
+          color: $primary-color;
+        }
+      }
+      .content {
+        width: 100%;
+        text-align: center;
+        margin-top: 110px;
+        .img-box {
+          position: absolute;
+          right: 4%;
+          left: 4%;
+          top: 261px;
+          img {
+            width: 220px;
+          }
+          p {
+            text-transform: uppercase;
+            color: $text-dark-color;
+            font-weight: bold;
+            font-size: 24px;
+            width: 190px;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 66px;
+            left: 4%;
+            right: 4%;
+
+            span {
+              color: $text-light-color;
+              cursor: pointer;
+            }
+          }
+        }
+        .history {
+          position: absolute;
+          top: 12rem;
+          right: 13%;
+          left: 12%;
+          div {
+            width: 255px;
+            margin: auto;
+            h2 {
+              font-weight: bold;
+              font-size: 24px;
+              text-transform: capitalize;
+            }
+            h6 {
+              color: $primary-color;
+              font-weight: 500;
+              font-size: 24px;
+              text-transform: capitalize;
+              padding-top: 17px;
+              padding-bottom: 15px;
+            }
+            p {
+              font-weight: 500;
+              font-size: 14px;
+              text-transform: capitalize;
+            }
+          }
+          .beginnings {
+            text-align: right;
+            position: absolute;
+            right: auto;
+          }
+          .firm-born {
+            text-align: left;
+            position: absolute;
+            top: 300px;
+            right: 0;
+            left: auto;
+            width: 242px;
+          }
+          .transition {
+            text-align: right;
+            position: absolute;
+            top: 600px;
+            right: auto;
+          }
+          .expansion {
+            text-align: left;
+            position: absolute;
+            top: 870px;
+            right: 0;
+            left: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .homepage-content {
+    .our-products {
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 30px;
+      .banner-main {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .homepage-content {
+    .about-invest {
+      min-height: 34vh;
+      .banner-main {
+        .content {
+          .img-box {
+            position: static;
+            img {
+              width: 180px;
+            }
+            p {
+              width: 145px;
+              bottom: 90px;
+              font-size: 100%;
+            }
+          }
+        }
+        .history {
+          left: 4% !important;
+          right: 4% !important;
+
+          .beginnings {
+            width: 34vw !important;
+            left: -18px;
+            right: 460px !important;
+            margin-left: 0 !important;
+            padding-left: 20px;
+          }
+          .firm-born {
+            width: 33vw !important;
+            top: 245px !important;
+            right: 0 !important;
+            left: auto !important;
+            margin-left: 0;
+            padding-left: 10px;
+          }
+          .transition {
+            width: 34vw !important;
+            left: -18px;
+            right: 460px !important;
+            margin-left: 0 !important;
+            top: 483px !important;
+            padding-left: 20px;
+          }
+          .expansion {
+            width: 33vw !important;
+            top: 726px !important;
+            right: 0 !important;
+            left: auto !important;
+            margin-left: 0;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .homepage-content {
+    .our-products {
+      .banner-main {
+        .content {
+          text-align: center;
+          .wealth-management {
+            flex-direction: column-reverse;
+            .wealth-management-content {
+              text-align: center;
+              width: 100%;
+            }
+            .wealth-management-image {
+              display: none !important;
+            }
+            .responsive-content {
+              display: block !important;
+            }
+          }
+          .trading-platform {
+            flex-direction: column-reverse;
+            .trading-platform-content {
+              text-align: center;
+              width: 100%;
+              margin-bottom: 150px;
+            }
+            .trading-platform-image {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 676px) {
+  .homepage-section {
+    .banner-main {
+      .content {
+        h1 {
+          font-size: 20px;
+        }
+        h3 {
+          font-weight: 600;
+          font-size: 16px;
+        }
+        p {
+          width: 100% !important;
+          font-size: 12px;
+        }
+        button {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .homepage-content {
+    .our-products {
+      background-color: $dark-bg-color;
+      min-height: 1020px;
+      padding-bottom: 30px;
+      .banner-main {
+        h2 {
+          font-size: 20px;
+          margin: 20px 0 60px;
+        }
+        .content {
+          margin-top: 0;
+          .our-products {
+            .banner-main {
+              .content {
+                margin-top: 10px;
+              }
+            }
+          }
+          .wealth-management {
+            .wealth-management-content {
+              h3 {
+                font-size: 16px;
+              }
+              p {
+                font-size: 12px;
+              }
+              button {
+                font-size: 12px;
+              }
+            }
+            img {
+              width: 50%;
+            }
+          }
+          .trading-platform {
+            margin-top: 80px;
+            .trading-platform-content {
+              margin-bottom: 0;
+              h3 {
+                font-size: 16px;
+              }
+              p {
+                font-size: 12px;
+              }
+              button {
+                font-size: 12px;
+              }
+            }
+            img {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+    .about-invest {
+      .banner-main {
+        h2 {
+          font-size: 20px;
+          margin-top: 1vh;
+        }
+        .content {
+          margin-top: 40px;
+
+          .history {
+            margin-top: -70px;
+
+            div {
+              h2 {
+                font-size: 14px;
+              }
+              h6 {
+                font-size: 12px;
+                padding: 0;
+              }
+              p {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .homepage-content {
+    .about-invest {
+      .banner-main {
+        .content {
+          .img-box {
+            img {
+              width: 120px;
+            }
+            p {
+              font-size: 14px;
+              width: 110px;
+              bottom: 69px;
+            }
+          }
+
+          .history {
+            .firm-born {
+              top: 155px !important;
+            }
+            .transition {
+              top: 308px !important;
+            }
+            .expansion {
+              top: 450px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .homepage-content {
+    .about-invest {
+      .banner-main {
+        .content {
+          .img-box {
+            img {
+              width: 100px;
+            }
+            p {
+              font-size: 12px;
+              width: 83px;
+              bottom: 63px;
+            }
+          }
+
+          .history {
+            margin-top: -80px;
+            .firm-born {
+              top: 130px !important;
+            }
+            .transition {
+              top: 260px !important;
+            }
+            .expansion {
+              top: 390px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../View/Layout/Styles/Variables/style';
+
+.link-button {
+  background-color: transparent;
+  color: $text-light-color;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 2px solid $primary-color !important;
+  text-transform: uppercase;
+  display: inline-block;
+
+  &:hover,
+  &:active {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+    color: $text-light-color;
+    text-decoration: none;
+  }
+
+  &:hover:active,
+  &:focus,
+  &.active {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+    box-shadow: 0 0 0 4px rgba(239, 209, 104, 0.64);
+  }
+
+  &:focus-visible {
+    outline: none !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .link-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
